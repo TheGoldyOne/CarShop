@@ -90,7 +90,7 @@ class Card extends Component<CardInterface, CardState> {
         {special}
         <FaRegCalendarAlt className="moreInfoIcon" onClick={this.toggleInfo} data-tip="Więcej Informacji" />
 
-        <div className={`more-info ${this.state.show ? 'active' : 'disabled'}`}>
+        <div className={`moreInfo ${this.state.show ? 'active' : 'disabled'}`}>
           <div className="moreDetails">
             <div className="item" data-tip="Telefon"><FaPhoneAlt/>&nbsp;{this.props.phone}</div>
             <div className="item" data-tip="Przebieg"><FaTachometerAlt/>&nbsp;{this.props.mileage} km.</div>
