@@ -76,7 +76,7 @@ class Card extends Component<CardInterface, CardState> {
     let special: any = [];
     special.push(
       this.props.special ? (
-        <div className="special">Oferta Specialna!</div>
+        <div className="special">Oferta Specjalna!</div>
       ) : (
         <div></div>
       )
