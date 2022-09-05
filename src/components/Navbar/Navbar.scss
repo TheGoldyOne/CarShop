@@ -1,0 +1,28 @@
+@import '../Variables.scss';
+.Navbar {
+    background-color: $color1;
+    padding: 1.25rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.logo {
+    height: 80px;
+}
+
+
+
+.button {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-bottom: 2px solid $color1;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    // text-transform: uppercase;
+}
+
+.button:hover {
+    border-bottom: 2px solid #fff;
+}
