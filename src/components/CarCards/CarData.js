@@ -188,7 +188,7 @@ const CarData = [
       'Isuzu D-Max Pierwszy właściciel, oryginalny przebieg, bezwypadkowy, Isuzu D-Max',
       'BMW Seria1 F20 116i',
       'Ford Fiesta Stan idealny. Zapraszam.',
-      'Opel Insignia Opel Insignia 2.0 T Turbo*4x4*SPORT*TOURER*',
+      'Opel Insignia Opel Insignia 2.0 T Turbo 4x4 SPORT TOURER*',
       'Citroen Xsara Kombi 2.0HDI 2004r',
       'Ford Ranger Wildtrak',
       'Peugeot 308 Peugeot 308 2008r. Uszkodzony',
