@@ -23,6 +23,7 @@ interface CardInterface {
   mileage: string;
   phone: string;
   countryOfOrigin: string;
+  special: boolean;
 }
 
 interface CardState {
@@ -72,11 +73,21 @@ class Card extends Component<CardInterface, CardState> {
       )
     );
 
+    let special: any = [];
+    special.push(
+      this.props.special ? (
+        <div className="special">Oferta Specialna!</div>
+      ) : (
+        <div></div>
+      )
+    );
+
     return (
       <div className={`card ${this.props.vip ? 'vip' : ''}`} >
         <div className="countryOfOrigin" data-tip={`Kraj pochodzenia: ${this.props.countryOfOrigin}`}>
           {this.countryOfOriginDict[this.props.countryOfOrigin]}
         </div>
+        {special}
         <FaRegCalendarAlt className="moreInfoIcon" onClick={this.toggleInfo} data-tip="Więcej Informacji" />
 
         <div className={`more-info ${this.state.show ? 'active' : 'disabled'}`}>
@@ -141,6 +152,7 @@ for (var i = 0; i < 100; i++) {
       mileage={random(d['mileage'])}
       phone={randomPhoneNumber()}
       countryOfOrigin={random(d['countryOfOrigin'])}
+      special={i ? false : true}
     />
   );
 }
