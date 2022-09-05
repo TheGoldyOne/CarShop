@@ -1,0 +1,37 @@
+.github {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    z-index: 5;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    width: 275px;
+    
+    border-radius: 0 10px 10px 0;
+
+    a {
+      display: flex;
+      color: #fff;
+      text-decoration: none;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    b {
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0;
+      font-weight: 300;
+    }
+
+    .logo {
+      font-size: 2rem;
+      margin: 0;
+    }
+}
